@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Grzegorz Laszczyk &ndash; personal website</title>
+	<link href="https://fonts.googleapis.com/css?family=Proza+Libre:400,700&subset=latin-ext" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<script type="text/javascript" src="./js/script.js"></script>
+	<script type="text/javascript" src="./js/script_es6.js"></script>
+</head>
+<body class="global">
+
+	<!-- Poszczególne części strony zostały wydzielone i opisane -->
+	<!-- Przyjąłem nazewnictwo zgodnie z metodologią BEM i konwencją zapisu: blok__element--modyfikator. -->
+	<!-- Starałem się aby blok miał formatowanie zredukowane do minimum i zawsze przyjmował 100% szerokości rodzica, a więc ogólna zasada jest następująca: blok (100% dostępnej szerokości)__element(szerokość zdefiniowana) blok (100% szerokości) itd. Dzięki temu bloki mogę przenosić i dopasowują się zawsze to __elementu, w którym je umieszczę. -->
+	
+	<!-- HEADER -->
+	<!-- __top-menu odpowiada za wygląd headera dla całej szerokości okna przeglądarki, bez względu na to, ile miejsca zajmie sama strona -->
+	<!-- __top-menu-container to wrapper dla zdefiniowanej szerokości strony (desktop/tablet/mobile) -->
+	<div class="global__top-menu">
+		<div class="global__top-menu-container">
+			
+			<!-- blok top-menu ma 100% szerokości i dopasowuje się zawsze to zadanej szerokości -->
+			<header class="top-menu">
+				<div class="top-menu__logo">
+					<img src="" alt="Grzegorz Laszczyk logo" class="top-menu__image">
+				</div>
+
+				<nav class="top-menu__navigation">
+					<ul class="navigation">
+						<li class="navigation__item">About me</li>
+						<li class="navigation__item">Portfolio</li>
+						<li class="navigation__item">Skills</li>
+						<li class="navigation__item">Contact</li>
+					</ul>
+				</nav>
+			</header>
+
+		</div>
+	</div>
+	<!-- KONIEC HEADERA -->
+
+	<!-- SEKCJA ABOUT ME -->
+	<!-- __about-me odpowiada za wygląd headera dla całej szerokości okna przeglądarki, bez względu na to, ile miejsca zajmie sama strona -->
+	<!-- __about-me-container to wrapper dla zdefiniowanej szerokości strony (desktop/tablet/mobile) -->
+	<div class="global__about-me">
+		<div class="global__about-me-container">
+
+			<!-- blok about-me ma 100% szerokości i dopasowuje się zawsze to zadanej szerokości -->		
+			<section class="about-me">
+				<h2 class="about-me__title">Grzegorz Laszczyk</h2>
+				<h3 class="about-me__subtitle">Front-End Developer and Designer</h3>
+				<h3 class="about-me__subtitle--underline">Full CV</h3>
+				<div class="about-me__image-container">
+					<img src="" alt="" class="about-me__image">
+				</div>
+				<p class="about-me__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> 
+				<p class="about-me__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> 
+
+			</section>
+		</div>
+	</div>
+	<!-- KONIEC SEKCJI ABOUT ME -->
+
+	<!-- SEKCJA PORTFOLIO -->
+	<!-- __portfolio odpowiada za wygląd headera dla całej szerokości okna przeglądarki, bez względu na to, ile miejsca zajmie sama strona -->
+	<!-- __portfolio-container to wrapper dla zdefiniowanej szerokości strony (desktop/tablet/mobile) -->
+	<div class="global__portfolio">
+		<div class="global__portfolio-container">
+
+			<!-- blok portfolio ma 100% szerokości i dopasowuje się zawsze to zadanej szerokości -->
+			<section class="portfolio">
+				<h2 class="portfolio__title">Portfolio</h2>
+				<h3 class="portfolio__subtitle">Some of my works</h3>
+
+				<h3 class="portfolio__subtitle--underline">Web Development</h3>
+				<div class="portfolio__projects-container">
+					<div class="portfolio__single-project">
+						<div class="single-project">
+							<img src="" alt="" class="single-project__image">
+							<p class="single-project__caption">Project 1</p>
+						</div>
+						<div class="single-project">
+							<img src="" alt="" class="single-project__image">
+							<p class="single-project__caption">Project 2</p>
+						</div>
+					</div>
+				</div>
+
+				<h3 class="portfolio__subtitle--underline">Typesetting</h3>
+				<div class="portfolio__projects-container">
+					<div class="portfolio__single-project">
+						<div class="single-project">
+							<img src="" alt="" class="single-project__image">
+							<p class="single-project__caption">Project 3</p>
+						</div>
+						<div class="single-project">
+							<img src="" alt="" class="single-project__image">
+							<p class="single-project__caption">Project 4</p>
+						</div>
+					</div>
+				</div>	
+
+				<h3 class="portfolio__subtitle--underline">Print Design</h3>
+				<div class="portfolio__projects-container">
+					<div class="portfolio__single-project">
+						<div class="single-project">
+							<img src="" alt="" class="single-project__image">
+							<p class="single-project__caption">Project 5</p>
+						</div>
+						<div class="single-project">
+							<img src="" alt="" class="single-project__image">
+							<p class="single-project__caption">Project 6</p>
+						</div>
+					</div>
+				</div>
+
+			</section>
+		</div>
+	</div>
+	<!-- KONIEC SEKCJI PORTFOLIO -->
+
+	<!-- SEKCJA SKILLS -->
+	<!-- __skills odpowiada za wygląd headera dla całej szerokości okna przeglądarki, bez względu na to, ile miejsca zajmie sama strona -->
+	<!-- __skills-container to wrapper dla zdefiniowanej szerokości strony (desktop/tablet/mobile) -->
+	<div class="global__skills">
+		<div class="global__skills-container">
+
+			<!-- blok skills ma 100% szerokości i dopasowuje się zawsze to zadanej szerokości -->
+			<section class="skills">
+				<h2 class="skills__title">Skills</h2>
+				<h3 class="skills__subtitle">What I know</h3>
+
+				<div class="skills__single-skill-container">
+					<div class="single-skill">
+						<div class="single-skill__image-container">
+							<img src="" alt="" class="single-skill__image">
+							<p class="single-skill__caption">HTML5</p>
+						</div>
+					</div>
+					<div class="single-skill">
+						<div class="single-skill__image-container">
+							<img src="" alt="" class="single-skill__image">
+							<p class="single-skill__caption">CSS3</p>
+						</div>
+					</div>
+					<div class="single-skill">
+						<div class="single-skill__image-container">
+							<img src="" alt="" class="single-skill__image">
+							<p class="single-skill__caption">JavaScript</p>
+						</div>
+					</div>					
+					<div class="single-skill">
+						<div class="single-skill__image-container">
+							<img src="" alt="" class="single-skill__image">
+							<p class="single-skill__caption">jQuery</p>
+						</div>
+					</div>	
+					<div class="single-skill">
+						<div class="single-skill__image-container">
+							<img src="" alt="" class="single-skill__image">
+							<p class="single-skill__caption">Sass</p>
+						</div>
+					</div>
+					<div class="single-skill">
+						<div class="single-skill__image-container">
+							<img src="" alt="" class="single-skill__image">
+							<p class="single-skill__caption">Gulp</p>
+						</div>
+					</div>
+					<div class="single-skill">
+						<div class="single-skill__image-container">
+							<img src="" alt="" class="single-skill__image">
+							<p class="single-skill__caption">Git</p>
+						</div>
+					</div>
+					<div class="single-skill">
+						<div class="single-skill__image-container">
+							<img src="" alt="" class="single-skill__image">
+							<p class="single-skill__caption">RWD</p>
+						</div>
+					</div>
+					<div class="single-skill">
+						<div class="single-skill__image-container">
+							<img src="" alt="" class="single-skill__image">
+							<p class="single-skill__caption">Wordpress</p>
+						</div>
+					</div>
+					<div class="single-skill">
+						<div class="single-skill__image-container">
+							<img src="" alt="" class="single-skill__image">
+							<p class="single-skill__caption">PHP basics</p>
+						</div>
+					</div>
+					<div class="single-skill">
+						<div class="single-skill__image-container">
+							<img src="" alt="" class="single-skill__image">
+							<p class="single-skill__caption">UI</p>
+						</div>
+					</div>
+					<div class="single-skill">
+						<div class="single-skill__image-container">
+							<img src="" alt="" class="single-skill__image">
+							<p class="single-skill__caption">Photoshop</p>
+						</div>
+					</div>
+					<div class="single-skill">
+						<div class="single-skill__image-container">
+							<img src="" alt="" class="single-skill__image">
+							<p class="single-skill__caption">Illustrator</p>
+						</div>
+					</div>
+					<div class="single-skill">
+						<div class="single-skill__image-container">
+							<img src="" alt="" class="single-skill__image">
+							<p class="single-skill__caption">InDesign</p>
+						</div>
+					</div>
+					<div class="single-skill">
+						<div class="single-skill__image-container">
+							<img src="" alt="" class="single-skill__image">
+							<p class="single-skill__caption">Typesetting</p>
+						</div>
+					</div>
+					<div class="single-skill">
+						<div class="single-skill__image-container">
+							<img src="" alt="" class="single-skill__image">
+							<p class="single-skill__caption">Print production</p>
+						</div>
+					</div>
+				</div>
+
+			</section>
+		</div>
+	</div>
+	<!-- KONIEC SEKCJI SKILLS -->
+
+	<!-- SEKCJA KONTAKT -->
+	<!-- __contact odpowiada za wygląd headera dla całej szerokości okna przeglądarki, bez względu na to, ile miejsca zajmie sama strona -->
+	<!-- __contact-container to wrapper dla zdefiniowanej szerokości strony (desktop/tablet/mobile) -->
+	<div class="global__contact">
+		<div class="global__contact-container">
+
+			<!-- blok contact ma 100% szerokości i dopasowuje się zawsze to zadanej szerokości -->
+			<section class="contact">
+				<h2 class="contact__title">Contact</h2>
+				<h3 class="contact__subtitle">Stay in touch</h3>
+
+				<div class="contact__contact-method-container">
+					<div class="contact-method">
+						<div class="contact-method__image-container">
+							<img src="" alt="" class="contact-method__image">
+							<p class="contact-method__caption">info@grzegorzlaszczyk.pl</p>
+						</div>
+					</div>
+					<div class="contact-method">
+						<div class="contact-method__image-container">
+							<img src="" alt="" class="contact-method__image">
+							<p class="contact-method__caption">LinkedIn</p>
+						</div>
+					</div>
+					<div class="contact-method">
+						<div class="contact-method__image-container">
+							<img src="" alt="" class="contact-method__image">
+							<p class="contact-method__caption">facebook</p>
+						</div>
+					</div>
+					<div class="contact-method">
+						<div class="contact-method__image-container">
+							<img src="" alt="" class="contact-method__image">
+							<p class="contact-method__caption">GitHub</p>
+						</div>
+					</div>
+					<p class="contact-method__caption--line-above">NIP</p>
+					<p class="contact-method__caption">mobile 609 405 805</p>
+				</div>
+
+				<div class="contact-form-container">
+					<form action="" class="form">
+						<label class="form__label">Name</label>
+						<input type="text" class="form__input">
+						<label class="form__label">Email</label>
+						<input type="email" class="form__input">
+						<label class="form__label">Message</label>
+						<textarea cols="form__textarea"></textarea>	
+						<button class="form__button">Send</button>
+					</form>
+				</div>
+
+			</section>
+		</div>
+	</div>
+	<!-- KONIEC SEKCJI KONTAKT -->
+	
+	<!-- FOOTER -->
+	<!-- __bottom-line odpowiada za wygląd headera dla całej szerokości okna przeglądarki, bez względu na to, ile miejsca zajmie sama strona -->
+	<!-- __bottom-line-container to wrapper dla zdefiniowanej szerokości strony (desktop/tablet/mobile) -->
+	<div class="global__bottom-line">
+		<div class="global__bottom-line-container">
+
+			<!-- blok bottom-line ma 100% szerokości i dopasowuje się zawsze to zadanej szerokości -->
+			<footer class="bottom-line">
+				<p class="bottom-line__copyright">Copyright 2016 Grzegorz Laszczyk</p>
+			</footer>
+		</div>
+	</div>
+	<!-- KONIEC FOOTERA -->
+</body>
+</html>
