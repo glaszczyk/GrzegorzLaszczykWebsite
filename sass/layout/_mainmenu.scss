@@ -1,0 +1,42 @@
+.main-menu {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	&__logo {
+		margin: $unitX 0 ($unitX / 2) 0;
+	}
+	&__image {
+		width: 98.5px;
+		height: 100px;
+		@include mobile {
+			width: 65px;
+			height: 66px;
+		}
+	}
+	&__navigation {
+
+	}
+}
+
+.navigation {
+	list-style-type: none;
+	text-align: center;
+	margin: $unitX 0;
+
+	&__item {
+		margin: $unitX ($unitX * 1.5);
+		display: inline;
+		@include font( ($fontSize * .875), $colorLight);
+
+		@include tablet {
+			margin: $unitX ($unitX / 2);
+		}		
+		@include mobile {
+			display: block;
+			margin: $unitX/2 ($unitX / 2);
+		}
+	}
+
+}

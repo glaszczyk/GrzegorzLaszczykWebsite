@@ -1,0 +1,67 @@
+.about-me {
+	&__row1,
+	&__row2 {
+
+		@include tablet {		
+			flex-wrap: wrap;
+		}
+		@include mobile {		
+			flex-wrap: wrap;
+		}
+	}
+	&__row1 {
+		align-items: center;
+	}
+	&__row2 {
+		display: flex;
+		@include desktop {
+		}
+	}
+
+	&__title-container {
+		margin: $unitX 0;
+	}
+
+	&__title {
+		@extend %title;
+	}
+	&__subtitle {
+		@extend %subtitle;
+	}
+
+	&__aside-container {
+		margin: $unitX 0;
+		display: flex;
+		justify-content: center;
+	}
+	&__subtitle--withline {
+		@extend %withline;
+	}
+
+	&__image-container {
+		align-self: flex-end;
+	}
+	&__image {
+		height: auto;
+		width: 100%;
+	}
+
+	&__text-container {
+		align-self: flex-end;
+		@include tablet {		
+			margin-top: $unitX;
+		}
+		@include mobile {		
+			margin-top: $unitX
+		}
+	}
+	&__paragraph {
+		margin-top: $unitX/2;
+		@include desktop {
+			@include font($fontSize*0.8, $colorDark);
+			margin-top: $unitX;
+		}
+		@include font($fontSize, $colorDark);
+	}
+
+}

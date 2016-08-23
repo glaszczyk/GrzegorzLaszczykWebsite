@@ -1,0 +1,40 @@
+// Mixin sprawdzania responsywności
+@mixin desktop {
+	@media (min-width: $desktop) { 
+		@content ; 
+	}
+}
+@mixin tablet {
+	@media (min-width: ($mobile * 1.5) + 1) and (max-width: $desktop - 1 ) {
+		@content ; 
+	}
+}
+@mixin mobile {
+	@media (max-width: ($mobile * 1.5) )  {
+		@content ; 
+	}
+}
+
+// Koniec GRIDa
+
+// Koniec sprawdzania responswyności
+
+// Mixin sprawdzania responsywności z warunkiem dla różnych ekranów
+// @mixin breakpoint($point) {
+// 	@if $point == desktop {
+// 		@media (min-width: $desktop) { 
+// 			@content ; 
+// 		}
+// 	}
+// 	@else if $point == tablet {
+// 		@media (min-width: ($mobile * 1.25) + 1) and (max-width: $desktop - 1 ) {
+// 			@content ; 
+// 		}
+// 	}
+// 	@else if $point == mobile {
+// 		@media (max-width: ($mobile * 1.25) )  {
+// 			@content ; 
+// 		}
+// 	}
+// }
+// Koniec sprawdzania responswyności

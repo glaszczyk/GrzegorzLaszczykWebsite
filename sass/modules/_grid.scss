@@ -1,0 +1,89 @@
+// GRID RWD
+@include desktop {
+	@for $i from 1  to 5 {
+
+		.col4-lg-#{$i} {
+			width: $i *25%;
+			padding-right: 1%;
+			padding-left: 1%; 
+		}
+
+		@for $j from 1 to (5 - $i) {
+			.col4-lg-#{$i}-#{$j} {
+				width: $i *25%;
+				padding-right: 1%;
+				padding-left: 1%; 
+				margin-left: $j * 25%;
+			}
+		}
+
+		@if $i == 4 {
+			.col4-lg-8 {
+				width: $i *12.5%;
+				padding-right: 1%;
+				padding-left: 1%; 
+			}
+			.col4-lg-8-1 {
+				width: $i * 12.5%;
+				padding-right: 1%;
+				padding-left: 1%; 
+				margin-left: 25%;
+			}		
+		}
+	}	
+}
+
+@include tablet {
+	@for $i from 1  to 5 {
+
+		.col4-md-#{$i} {
+			width: $i *25%;
+			padding-right: 1%;
+			padding-left: 1%; 
+		}
+
+		@for $j from 1 to (5 - $i) {
+			.col4-md-#{$i}-#{$j} {
+				width: $i *25%;
+				padding-right: 1%;
+				padding-left: 1%; 
+				margin-left: $j * 25%;
+			}
+		}
+	}
+	.col4-md-3-c {
+		width: (100% / 3) * 2;
+		padding-right: 1%;
+		padding-left: 1%; 
+		margin-left: (100% / 6);
+		margin-right: (100% / 6);
+	}	
+}
+
+@include mobile {
+	@for $i from 1  to 5 {
+
+		@if $i == 4 {
+			.col4-sm-#{$i} {
+				width: 100%;
+				padding-right: $unitX;
+				padding-left: $unitX; 
+			}
+		} @else {
+			.col4-sm-#{$i} {
+				width: $i *25%;
+				padding-right: 2%;
+				padding-left: 2%; 
+			}
+
+			@if $i == 1 {
+				.col3-sm-#{$i} {
+					width: 80% / 3;
+					padding-right: 2%;
+					padding-left: 2%; 
+				}
+			}
+		}
+	
+	}	
+}

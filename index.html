@@ -16,18 +16,20 @@
 	<!-- Starałem się aby blok miał formatowanie zredukowane do minimum i zawsze przyjmował 100% szerokości rodzica, a więc ogólna zasada jest następująca: blok (100% dostępnej szerokości)__element(szerokość zdefiniowana) blok (100% szerokości) itd. Dzięki temu bloki mogę przenosić i dopasowują się zawsze to __elementu, w którym je umieszczę. -->
 	
 	<!-- HEADER -->
-	<!-- __top-menu odpowiada za wygląd headera dla całej szerokości okna przeglądarki, bez względu na to, ile miejsca zajmie sama strona -->
-	<!-- __top-menu-container to wrapper dla zdefiniowanej szerokości strony (desktop/tablet/mobile) -->
-	<div class="global__top-menu">
-		<div class="global__top-menu-container">
+	<!-- __main-menu odpowiada za wygląd headera dla całej szerokości okna przeglądarki, bez względu na to, ile miejsca zajmie sama strona -->
+	<!-- __main-menu-container to wrapper dla zdefiniowanej szerokości strony (desktop/tablet/mobile) -->
+	<div class="global__main-menu">
+		<div class="global__main-menu-container">
 			
-			<!-- blok top-menu ma 100% szerokości i dopasowuje się zawsze to zadanej szerokości -->
-			<header class="top-menu">
-				<div class="top-menu__logo">
-					<img src="" alt="Grzegorz Laszczyk logo" class="top-menu__image">
+			<!-- blok main-menu ma 100% szerokości i dopasowuje się zawsze to zadanej szerokości -->
+			<header class="main-menu">
+				<div class="main-menu__logo">
+					<!-- Logo SVG Start -->
+					<object class="main-menu__image" data="./images/GrzegorzLaszczyk_Logo_White.svg" type="image/svg+xml"></object>
+					<!-- Logo Koniec -->
 				</div>
 
-				<nav class="top-menu__navigation">
+				<nav class="main-menu__navigation">
 					<ul class="navigation">
 						<li class="navigation__item">About me</li>
 						<li class="navigation__item">Portfolio</li>
@@ -49,14 +51,28 @@
 
 			<!-- blok about-me ma 100% szerokości i dopasowuje się zawsze to zadanej szerokości -->		
 			<section class="about-me">
-				<h2 class="about-me__title">Grzegorz Laszczyk</h2>
-				<h3 class="about-me__subtitle">Front-End Developer and Designer</h3>
-				<h3 class="about-me__subtitle--underline">Full CV</h3>
-				<div class="about-me__image-container">
-					<img src="" alt="" class="about-me__image">
+
+				<div class="about-me__row1">
+					<div class="about-me__title-container col4-lg-4 col4-md-4 col4-sm-4">
+						<h2 class="about-me__title">Grzegorz Laszczyk</h2>
+						<h3 class="about-me__subtitle">Front-End Developer and&nbsp;Designer</h3>
+					</div>
+					
+					<div class="about-me__aside-container col4-lg-4 col4-md-4 col4-sm-4">
+						<h3 class="about-me__subtitle--withline">Full CV</h3>
+					</div>
 				</div>
-				<p class="about-me__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> 
-				<p class="about-me__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> 
+				
+				<div class="about-me__row2">	
+					<div class="about-me__image-container col4-lg-3 col4-md-3-c col4-sm-4">
+						<img src="../images/tools_hd.jpg" alt="" class="about-me__image">
+					</div>
+	
+					<div class="about-me__text-container col4-lg-1 col4-md-3-c col4-sm-4">
+						<p class="about-me__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> 
+						<p class="about-me__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> 
+					</div>
+				</div>
 
 			</section>
 		</div>
@@ -71,47 +87,54 @@
 
 			<!-- blok portfolio ma 100% szerokości i dopasowuje się zawsze to zadanej szerokości -->
 			<section class="portfolio">
-				<h2 class="portfolio__title">Portfolio</h2>
-				<h3 class="portfolio__subtitle">Some of my works</h3>
-
-				<h3 class="portfolio__subtitle--underline">Web Development</h3>
-				<div class="portfolio__projects-container">
-					<div class="portfolio__single-project">
+				<div class="portfolio__title-container col4-lg-4 col4-md-4 col4-sm-4">
+					<h2 class="portfolio__title">Portfolio</h2>
+					<h3 class="portfolio__subtitle">Some of my works</h3>
+				</div>
+				<div class="portfolio__row1">
+					<h3 class="portfolio__subtitle--withline col4-lg-1 col4-md-4 col4-sm-4">Web Development</h3>
+					<div class="portfolio__single-project col4-lg-1 col4-md-4 col4-sm-4">
 						<div class="single-project">
-							<img src="" alt="" class="single-project__image">
+							<img src="../images/tools_hd.jpg" alt="" class="single-project__image">
 							<p class="single-project__caption">Project 1</p>
 						</div>
+					</div>
+					<div class="portfolio__single-project col4-lg-1 col4-md-4 col4-sm-4">
 						<div class="single-project">
-							<img src="" alt="" class="single-project__image">
+							<img src="../images/tools_hd.jpg" alt="" class="single-project__image">
 							<p class="single-project__caption">Project 2</p>
 						</div>
 					</div>
 				</div>
 
-				<h3 class="portfolio__subtitle--underline">Typesetting</h3>
-				<div class="portfolio__projects-container">
-					<div class="portfolio__single-project">
+				<div class="portfolio__row1">
+					<h3 class="portfolio__subtitle--withline col4-lg-1 col4-md-4 col4-sm-4">Typesetting</h3>
+					<div class="portfolio__single-project col4-lg-1 col4-md-4 col4-sm-4">
 						<div class="single-project">
-							<img src="" alt="" class="single-project__image">
-							<p class="single-project__caption">Project 3</p>
-						</div>
-						<div class="single-project">
-							<img src="" alt="" class="single-project__image">
-							<p class="single-project__caption">Project 4</p>
+							<img src="../images/tools_hd.jpg" alt="" class="single-project__image">
+							<p class="single-project__caption">Project 1</p>
 						</div>
 					</div>
-				</div>	
-
-				<h3 class="portfolio__subtitle--underline">Print Design</h3>
-				<div class="portfolio__projects-container">
-					<div class="portfolio__single-project">
+					<div class="portfolio__single-project col4-lg-1 col4-md-4 col4-sm-4">
 						<div class="single-project">
-							<img src="" alt="" class="single-project__image">
-							<p class="single-project__caption">Project 5</p>
+							<img src="../images/tools_hd.jpg" alt="" class="single-project__image">
+							<p class="single-project__caption">Project 2</p>
 						</div>
+					</div>
+				</div>
+
+				<div class="portfolio__row1">
+					<h3 class="portfolio__subtitle--withline col4-lg-1 col4-md-4 col4-sm-4">Print Design</h3>
+					<div class="portfolio__single-project col4-lg-1 col4-md-4 col4-sm-4">
 						<div class="single-project">
-							<img src="" alt="" class="single-project__image">
-							<p class="single-project__caption">Project 6</p>
+							<img src="../images/tools_hd.jpg" alt="" class="single-project__image">
+							<p class="single-project__caption">Project 1</p>
+						</div>
+					</div>
+					<div class="portfolio__single-project col4-lg-1 col4-md-4 col4-sm-4">
+						<div class="single-project">
+							<img src="../images/tools_hd.jpg" alt="" class="single-project__image">
+							<p class="single-project__caption">Project 2</p>
 						</div>
 					</div>
 				</div>
@@ -294,14 +317,14 @@
 	<!-- KONIEC SEKCJI KONTAKT -->
 	
 	<!-- FOOTER -->
-	<!-- __bottom-line odpowiada za wygląd headera dla całej szerokości okna przeglądarki, bez względu na to, ile miejsca zajmie sama strona -->
-	<!-- __bottom-line-container to wrapper dla zdefiniowanej szerokości strony (desktop/tablet/mobile) -->
-	<div class="global__bottom-line">
-		<div class="global__bottom-line-container">
+	<!-- __footer-details odpowiada za wygląd headera dla całej szerokości okna przeglądarki, bez względu na to, ile miejsca zajmie sama strona -->
+	<!-- __footer-details-container to wrapper dla zdefiniowanej szerokości strony (desktop/tablet/mobile) -->
+	<div class="global__footer-details">
+		<div class="global__footer-details-container">
 
-			<!-- blok bottom-line ma 100% szerokości i dopasowuje się zawsze to zadanej szerokości -->
-			<footer class="bottom-line">
-				<p class="bottom-line__copyright">Copyright 2016 Grzegorz Laszczyk</p>
+			<!-- blok footer-details ma 100% szerokości i dopasowuje się zawsze to zadanej szerokości -->
+			<footer class="footer-details">
+				<p class="footer-details__copyright">Copyright 2016 Grzegorz Laszczyk</p>
 			</footer>
 		</div>
 	</div>

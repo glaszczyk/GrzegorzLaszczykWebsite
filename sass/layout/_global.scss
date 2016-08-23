@@ -1,0 +1,39 @@
+* {
+	@extend %reset-css;
+}
+
+.global {
+	&__main-menu {
+		background-color: $colorDark;
+		
+		&-container {
+			@extend %responsive-container; //_extends.scss
+		}
+	}
+
+	&__about-me {
+		&-container {
+			@extend %responsive-container; //_extends.scss
+		}
+	}
+	&__portfolio {
+		&-container {
+			@extend %responsive-container; //_extends.scss
+		}
+	}
+	&__skills {
+		&-container {
+			@extend %responsive-container; //_extends.scss
+		}
+	}
+	&__contact {
+		&-container {
+			@extend %responsive-container; //_extends.scss
+		}
+	}
+	&__footer-details {
+		&-container {
+			@extend %responsive-container; //_extends.scss
+		}
+	}
+}
