@@ -12,7 +12,7 @@
 <body class="global">
 
 	<!-- Poszczególne części strony zostały wydzielone i opisane -->
-	<!-- Przyjąłem nazewnictwo zgodnie z metodologią BEM i konwencją zapisu: blok__element--modyfikator. -->
+	<!-- Przyjąłem nazewnictwo zgodnie z metodologią BEM i konwencją zapisu: blok__element- -modyfikator. -->
 	<!-- Starałem się aby blok miał formatowanie zredukowane do minimum i zawsze przyjmował 100% szerokości rodzica, a więc ogólna zasada jest następująca: blok (100% dostępnej szerokości)__element(szerokość zdefiniowana) blok (100% szerokości) itd. Dzięki temu bloki mogę przenosić i dopasowują się zawsze to __elementu, w którym je umieszczę. -->
 	
 	<!-- HEADER -->
@@ -91,15 +91,18 @@
 					<h2 class="portfolio__title">Portfolio</h2>
 					<h3 class="portfolio__subtitle">Some of my works</h3>
 				</div>
-				<div class="portfolio__row1">
-					<h3 class="portfolio__subtitle--withline col4-lg-1 col4-md-4 col4-sm-4">Web Development</h3>
-					<div class="portfolio__single-project col4-lg-1 col4-md-4 col4-sm-4">
+
+				<div class="portfolio__row1 col4-lg-4 col4-md-4 col4-sm-2-1">
+					<div class="portfolio__group-title col4-lg-1 col4-md-4 col4-sm-4">
+						<h3 class="portfolio__subtitle--withline">Web Development</h3>
+					</div>
+					<div class="portfolio__single-project col4-lg-1 col4-md-2-1 col4-sm-4">
 						<div class="single-project">
 							<img src="../images/tools_hd.jpg" alt="" class="single-project__image">
 							<p class="single-project__caption">Project 1</p>
 						</div>
 					</div>
-					<div class="portfolio__single-project col4-lg-1 col4-md-4 col4-sm-4">
+					<div class="portfolio__single-project col4-lg-1 col4-md-2-1 col4-sm-4">
 						<div class="single-project">
 							<img src="../images/tools_hd.jpg" alt="" class="single-project__image">
 							<p class="single-project__caption">Project 2</p>
@@ -107,15 +110,17 @@
 					</div>
 				</div>
 
-				<div class="portfolio__row1">
-					<h3 class="portfolio__subtitle--withline col4-lg-1 col4-md-4 col4-sm-4">Typesetting</h3>
-					<div class="portfolio__single-project col4-lg-1 col4-md-4 col4-sm-4">
+				<div class="portfolio__row1 col4-lg-4 col4-md-4 col4-sm-2-1">
+					<div class="portfolio__group-title col4-lg-1 col4-md-4 col4-sm-4">
+						<h3 class="portfolio__subtitle--withline">Typesetting</h3>
+					</div>
+					<div class="portfolio__single-project col4-lg-1 col4-md-2-1 col4-sm-4">
 						<div class="single-project">
 							<img src="../images/tools_hd.jpg" alt="" class="single-project__image">
 							<p class="single-project__caption">Project 1</p>
 						</div>
 					</div>
-					<div class="portfolio__single-project col4-lg-1 col4-md-4 col4-sm-4">
+					<div class="portfolio__single-project col4-lg-1 col4-md-2-1 col4-sm-4">
 						<div class="single-project">
 							<img src="../images/tools_hd.jpg" alt="" class="single-project__image">
 							<p class="single-project__caption">Project 2</p>
@@ -123,22 +128,23 @@
 					</div>
 				</div>
 
-				<div class="portfolio__row1">
-					<h3 class="portfolio__subtitle--withline col4-lg-1 col4-md-4 col4-sm-4">Print Design</h3>
-					<div class="portfolio__single-project col4-lg-1 col4-md-4 col4-sm-4">
+				<div class="portfolio__row1 col4-lg-4 col4-md-4 col4-sm-2-1">
+					<div class="portfolio__group-title col4-lg-1 col4-md-4 col4-sm-4">
+						<h3 class="portfolio__subtitle--withline">Print Design</h3>
+					</div>
+					<div class="portfolio__single-project col4-lg-1 col4-md-2-1 col4-sm-4">
 						<div class="single-project">
 							<img src="../images/tools_hd.jpg" alt="" class="single-project__image">
 							<p class="single-project__caption">Project 1</p>
 						</div>
 					</div>
-					<div class="portfolio__single-project col4-lg-1 col4-md-4 col4-sm-4">
+					<div class="portfolio__single-project col4-lg-1 col4-md-2-1 col4-sm-4">
 						<div class="single-project">
 							<img src="../images/tools_hd.jpg" alt="" class="single-project__image">
 							<p class="single-project__caption">Project 2</p>
 						</div>
 					</div>
 				</div>
-
 			</section>
 		</div>
 	</div>
@@ -150,12 +156,15 @@
 	<div class="global__skills">
 		<div class="global__skills-container">
 
-			<!-- blok skills ma 100% szerokości i dopasowuje się zawsze to zadanej szerokości -->
+			<!-- blok skills ma 100% szerokości i dopasowuje się zawsze to zadanej szerokości -->			
 			<section class="skills">
-				<h2 class="skills__title">Skills</h2>
-				<h3 class="skills__subtitle">What I know</h3>
+				<div class="skills__title-container col4-lg-4 col4-md-4 col4-sm-4">
+					<h2 class="skills__title">Skills</h2>
+					<h3 class="skills__subtitle">What I know</h3>
+				</div>
 
 				<div class="skills__single-skill-container">
+
 					<div class="single-skill">
 						<div class="single-skill__image-container">
 							<img src="" alt="" class="single-skill__image">
@@ -251,12 +260,15 @@
 							<img src="" alt="" class="single-skill__image">
 							<p class="single-skill__caption">Print production</p>
 						</div>
-					</div>
+					</div>					
 				</div>
-
+				
 			</section>
 		</div>
 	</div>
+
+
+
 	<!-- KONIEC SEKCJI SKILLS -->
 
 	<!-- SEKCJA KONTAKT -->
@@ -267,8 +279,10 @@
 
 			<!-- blok contact ma 100% szerokości i dopasowuje się zawsze to zadanej szerokości -->
 			<section class="contact">
-				<h2 class="contact__title">Contact</h2>
-				<h3 class="contact__subtitle">Stay in touch</h3>
+				<div class="skills__title-container col4-lg-4 col4-md-4 col4-sm-4">
+					<h2 class="contact__title">Contact</h2>
+					<h3 class="contact__subtitle">Stay in touch</h3>
+				</div>
 
 				<div class="contact__contact-method-container">
 					<div class="contact-method">
