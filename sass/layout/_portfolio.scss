@@ -1,6 +1,6 @@
 .portfolio {
 	&__title-container {
-		margin: $unitX 0;
+		margin: ($unitX * 2) 0;
 	}
 	&__title {
 		@extend %title;
@@ -10,22 +10,49 @@
 	}
 
 	&__row1 {
+		margin-top: $unitX * 2;
 		display: flex;
+		flex-wrap: wrap;
+	}
+	&__group-title {
+		display: flex;
+		justify-content: center;
+		@include desktop {
+			text-align: right;
+			justify-content: flex-end;
+			padding-right: 0;
+		}
+		@include tablet {
+			margin-bottom: $unitX;
+		}
+		@include mobile {
+			margin-bottom: ($unitX / 2);
+		}
 	}
 	&__subtitle--withline {
 		@extend %withline;
 		@include desktop {
-			text-align: right;
-			padding-right: ($unitX / 2);
-			justify-content: flex-end;
+			padding: 0 ($unitX / 2) ($unitX / 2);
 			border-right: 5px solid $colorPrimary;
 			border-left: 0px solid $colorPrimary;
 			border-bottom: 0px solid $colorPrimary;
+		}
+		@include tablet {
+			padding-bottom: 2px;
+		}
+		@include mobile {
+			padding-bottom: 2px;
 		}
 	}
 	&__projects-container {
 	}
 	&__single-project {
+		@include tablet {
+			margin-bottom: $unitX;
+		}
+		@include mobile {
+			margin-bottom: $unitX;
+		}		
 
 	}
 }

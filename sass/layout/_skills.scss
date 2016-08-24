@@ -1,0 +1,65 @@
+.skills {
+	&__title-container {
+		margin: ($unitX * 2) 0;
+	}
+	&__title {
+		@extend %title;
+	}
+	&__subtitle {
+		@extend %subtitle;
+	}
+	&__all-skills-container {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		@include tablet {
+			// padding: 0 7%;
+		}
+	}
+
+	&__single-skill-container {
+		display: flex;
+		justify-content: center;
+		text-align: center;
+		@include desktop {
+			width: 25%;
+			padding: 0 1%;	
+			margin-bottom: $unitX * 3;
+		}
+		@include tablet {
+			width: 33.3333%;	
+			padding: 0 1%;
+			margin-bottom: $unitX * 2;
+		}
+		@include mobile {
+			width: 50%;	
+			padding: 0 2%;
+			margin-bottom: $unitX * 1.5;
+		}
+	}	
+}
+
+.single-skill {
+	&__image-container {
+		background-color: $colorDark;
+		@include desktop {
+			width: 150px;	
+			height: 150px;
+		}
+		@include tablet {
+			width: 120px;	
+			height: 120px;	
+		}
+		@include mobile {
+			width: 120px;	
+			height: 120px;
+		}		
+	}
+	&__image {
+		
+	}
+	&__caption {
+		margin-top: $unitX / 2;
+	}
+
+}

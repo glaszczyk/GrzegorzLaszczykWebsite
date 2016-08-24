@@ -1,0 +1,11 @@
+.footer-details {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+
+	&__copyright {
+		color: $colorLight;
+		padding: $unitX 0 $unitX 0;
+		font-size: $fontSize * 0.8;
+	}
+}

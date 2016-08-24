@@ -1,0 +1,103 @@
+.contact {
+	&__title-container {
+		margin: ($unitX * 2) 0;
+	}
+	&__title {
+		@extend %title;
+	}
+	&__subtitle {
+		@extend %subtitle;
+	}
+	&__contact-method-container {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;		
+	}
+	&__method-item {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		@include desktop {
+			width: 25%;
+			padding: 0 1%;	
+			margin-bottom: $unitX * 3;
+		}
+		@include tablet {
+			width: 50%;	
+			padding: 0 1%;
+			margin-bottom: $unitX * 2;
+		}
+		@include mobile {
+			width: 100%;	
+			padding: 0 2%;
+			margin-bottom: $unitX * 1.5;
+		}		
+	}
+
+	&__form-container {
+		display: flex;
+		flex-direction: column;
+		align-items: stretch;
+	}
+}
+
+.contact-method {
+	display: flex;
+	align-self: center;
+	flex-direction: column;
+	&__image-container {
+		align-self: center;
+		background-color: $colorDark;
+		border-radius: 50%;
+		@include desktop {
+			width: 150px;	
+			height: 150px;
+		}
+		@include tablet {
+			width: 120px;	
+			height: 120px;	
+		}
+		@include mobile {
+			width: 120px;	
+			height: 120px;
+		}		
+	}
+	&__image {
+		
+	}
+	&__caption {
+		margin-top: $unitX / 2;
+		text-align: center;
+	}
+}
+
+.form {
+	&__label {
+		display: block;
+		text-align: center;
+	}
+	&__input {
+		width: 100%;
+		display: block;
+		background-color: $colorLight;
+		border: 0;
+		height: $unitX * 3;
+	}
+	&__textarea {
+		width: 100%;
+		display: block;
+		background-color: $colorLight;
+		border: 0;
+	}
+	&__button {
+		margin: $unitX auto ($unitX * 2) auto;
+		display: block;
+		background-color: $colorPrimary;
+		border: 0;
+		padding: $unitX 0;
+		width: 150px;
+		border-radius: 2px;
+		font-size: $fontSize * 1.2;
+		color: $colorLight;
+	}
+}

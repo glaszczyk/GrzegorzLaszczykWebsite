@@ -32,6 +32,9 @@
 		}
 	}
 	&__footer-details {
+
+		background-color: $colorDark;
+		
 		&-container {
 			@extend %responsive-container; //_extends.scss
 		}
