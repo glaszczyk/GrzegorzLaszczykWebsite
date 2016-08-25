@@ -5,9 +5,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Grzegorz Laszczyk &ndash; personal website</title>
 	<link href="https://fonts.googleapis.com/css?family=Proza+Libre:400,700&subset=latin-ext" rel="stylesheet">
+	<link href='//cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css' rel='stylesheet'>
+	<link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"> 
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
-	<script type="text/javascript" src="./js/script.js"></script>
-	<script type="text/javascript" src="./js/script_es6.js"></script>
+	<!-- <script type="text/javascript" src="./js/script_es6.js"></script> -->
+	<script src="https://code.jquery.com/jquery-2.2.0.min.js"> </script>
+	<!-- <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/14082/FileSaver.js"> </script> -->
+	<script type="text/javascript" src="./es6/script_es6.js"></script>	
+	<!-- <script type="text/javascript" src="./es6/template.js"></script> -->
 </head>
 <body class="global">
 
@@ -165,135 +170,102 @@
 				</div>
 
 				<div class="skills__all-skills-container col4-lg-4 col4-md-4 col4-sm-4">
-						<div class="skills__single-skill-container">
-							<div class="single-skill">
-								<div class="single-skill__image-container">
-									<img src="obrazek" alt="" class="single-skill__image">
-								</div>
-								<p class="single-skill__caption">HTML5</p>
+					<div class="skills__single-skill-container">
+						<div class="single-skill">
+							<div class="single-skill__image-container">
+								<p class="single-skill__image" data-desc="Opis HTML">&#xe636</p>
 							</div>
+							<p class="single-skill__caption">HTML5</p>
 						</div>
-						<div class="skills__single-skill-container">
-							<div class="single-skill">
-								<div class="single-skill__image-container">
-									<img src="obrazek" alt="" class="single-skill__image">
-								</div>
-								<p class="single-skill__caption">CSS3</p>
+					</div>
+					<div class="skills__single-skill-container">
+						<div class="single-skill">
+							<div class="single-skill__image-container">
+								<p class="single-skill__image">&#xe649</p>
 							</div>
+							<p class="single-skill__caption">CSS3</p>
 						</div>
-
-						<div class="skills__single-skill-container">
-							<div class="single-skill">
-								<div class="single-skill__image-container">
-									<img src="obrazek" alt="" class="single-skill__image">
-								</div>
-								<p class="single-skill__caption">JavaScript</p>
+					</div>
+					<div class="skills__single-skill-container">
+						<div class="single-skill">
+							<div class="single-skill__image-container">
+								<p class="single-skill__image">&#xe681</p>
 							</div>
+							<p class="single-skill__caption">JavaScript</p>
 						</div>
-						<div class="skills__single-skill-container">
-							<div class="single-skill">
-								<div class="single-skill__image-container">
-									<img src="obrazek" alt="" class="single-skill__image">
-								</div>
-								<p class="single-skill__caption">jQuery</p>
+					</div>
+					<div class="skills__single-skill-container">
+						<div class="single-skill">
+							<div class="single-skill__image-container">
+								<p class="single-skill__image">&#xe650</p>
 							</div>
+							<p class="single-skill__caption">jQuery</p>
 						</div>
-						<div class="skills__single-skill-container">
-							<div class="single-skill">
-								<div class="single-skill__image-container">
-									<img src="obrazek" alt="" class="single-skill__image">
-								</div>
-								<p class="single-skill__caption">Sass</p>
+					</div>
+					<div class="skills__single-skill-container">
+						<div class="single-skill">
+							<div class="single-skill__image-container">
+								<p class="single-skill__image">&#xe64b</p>
 							</div>
+							<p class="single-skill__caption">Sass</p>
 						</div>
-						<div class="skills__single-skill-container">
-							<div class="single-skill">
-								<div class="single-skill__image-container">
-									<img src="obrazek" alt="" class="single-skill__image">
-								</div>
-								<p class="single-skill__caption">Gulp</p>
+					</div>
+					<div class="skills__single-skill-container">
+						<div class="single-skill">
+							<div class="single-skill__image-container">
+								<p class="single-skill__image">&#xe663</p>
 							</div>
+							<p class="single-skill__caption">Gulp</p>
 						</div>
-						<div class="skills__single-skill-container">
-							<div class="single-skill">
-								<div class="single-skill__image-container">
-									<img src="obrazek" alt="" class="single-skill__image">
-								</div>
-								<p class="single-skill__caption">Git</p>
+					</div>
+					<div class="skills__single-skill-container">
+						<div class="single-skill">
+							<div class="single-skill__image-container">
+								<p class="single-skill__image">&#xe609</p>
 							</div>
-						</div>						
-						<div class="skills__single-skill-container">
-							<div class="single-skill">
-								<div class="single-skill__image-container">
-									<img src="obrazek" alt="" class="single-skill__image">
-								</div>
-								<p class="single-skill__caption">RWD</p>
-							</div>
+							<p class="single-skill__caption">Git</p>
 						</div>
-						<div class="skills__single-skill-container">
-							<div class="single-skill">
-								<div class="single-skill__image-container">
-									<img src="obrazek" alt="" class="single-skill__image">
-								</div>
-								<p class="single-skill__caption">WordPress</p>
+					</div>
+					<div class="skills__single-skill-container">
+						<div class="single-skill">
+							<div class="single-skill__image-container">
+								<p class="single-skill__image">&#xe647</p>
 							</div>
+							<p class="single-skill__caption">Bootstrap</p>
 						</div>
-						<div class="skills__single-skill-container">
-							<div class="single-skill">
-								<div class="single-skill__image-container">
-									<img src="obrazek" alt="" class="single-skill__image">
-								</div>
-								<p class="single-skill__caption">PHP basics</p>
+					</div>
+					<div class="skills__single-skill-container">
+						<div class="single-skill">
+							<div class="single-skill__image-container">
+								<p class="single-skill__image">&#xe60b</p>
 							</div>
+							<p class="single-skill__caption">WordPress</p>
 						</div>
-						<div class="skills__single-skill-container">
-							<div class="single-skill">
-								<div class="single-skill__image-container">
-									<img src="obrazek" alt="" class="single-skill__image">
-								</div>
-								<p class="single-skill__caption">UI</p>
+					</div>
+					<div class="skills__single-skill-container">
+						<div class="single-skill">
+							<div class="single-skill__image-container">
+								<p class="single-skill__image">&#xe63d</p>
 							</div>
+							<p class="single-skill__caption">PHP basics</p>
 						</div>
-						<div class="skills__single-skill-container">
-							<div class="single-skill">
-								<div class="single-skill__image-container">
-									<img src="obrazek" alt="" class="single-skill__image">
-								</div>
-								<p class="single-skill__caption">Photoshop</p>
+					</div>
+					<div class="skills__single-skill-container">
+						<div class="single-skill">
+							<div class="single-skill__image-container">
+								<p class="single-skill__image">&#xe611</p>
 							</div>
+							<p class="single-skill__caption">Apple</p>
 						</div>
-						<div class="skills__single-skill-container">
-							<div class="single-skill">
-								<div class="single-skill__image-container">
-									<img src="obrazek" alt="" class="single-skill__image">
-								</div>
-								<p class="single-skill__caption">Illustrator</p>
+					</div>
+					<div class="skills__single-skill-container">
+						<div class="single-skill">
+							<div class="single-skill__image-container">
+								<p class="single-skill__image">&#xe60f</p>
 							</div>
+							<p class="single-skill__caption">Windows</p>
 						</div>
-						<div class="skills__single-skill-container">
-							<div class="single-skill">
-								<div class="single-skill__image-container">
-									<img src="obrazek" alt="" class="single-skill__image">
-								</div>
-								<p class="single-skill__caption">InDesign</p>
-							</div>
-						</div>
-						<div class="skills__single-skill-container">
-							<div class="single-skill">
-								<div class="single-skill__image-container">
-									<img src="obrazek" alt="" class="single-skill__image">
-								</div>
-								<p class="single-skill__caption">Typesetting</p>
-							</div>
-						</div>
-						<div class="skills__single-skill-container">
-							<div class="single-skill">
-								<div class="single-skill__image-container">
-									<img src="obrazek" alt="" class="single-skill__image">
-								</div>
-								<p class="single-skill__caption">Print Production</p>
-							</div>
-						</div>
+					</div>
 				</div>
 				
 			</section>
@@ -316,26 +288,27 @@
 				</div>
 
 				<div class="contact__contact-method-container col4-lg-4 col4-md-3-c col4-sm-2-1">
+					<!-- Początek kontaktów -->
 					<div class="contact__method-item">
 						<div class="contact-method">
 							<div class="contact-method__image-container">
-								<img src="" alt="" class="contact-method__image">
+								<a class="contact-method__image ion-ios-email" target="_blank" href="mailto: info@grzegorzlaszczyk.pl"></a>
 							</div>
 							<p class="contact-method__caption">info@grzegorzlaszczyk.pl</p>
 						</div>
 					</div>
-					<div class="contact__method-item">					
+					<div class="contact__method-item">
 						<div class="contact-method">
 							<div class="contact-method__image-container">
-								<img src="" alt="" class="contact-method__image">
+								<a class="contact-method__image ion-social-linkedin" target="_blank" href="https://pl.linkedin.com/in/greglas"></a>
 							</div>
 							<p class="contact-method__caption">LinkedIn</p>
 						</div>
 					</div>
-					<div class="contact__method-item">						
+					<div class="contact__method-item">
 						<div class="contact-method">
 							<div class="contact-method__image-container">
-								<img src="" alt="" class="contact-method__image">
+								<a class="contact-method__image ion-social-facebook" target="_blank" href="http://www.facebook.com/glaszczyk"></a>
 							</div>
 							<p class="contact-method__caption">facebook</p>
 						</div>
@@ -343,11 +316,13 @@
 					<div class="contact__method-item">
 						<div class="contact-method">
 							<div class="contact-method__image-container">
-								<img src="" alt="" class="contact-method__image">
+								<a class="contact-method__image ion-social-github" target="_blank" href="https://github.com/glaszczyk"></a>
 							</div>
 							<p class="contact-method__caption">GitHub</p>
 						</div>
 					</div>
+
+					<!-- Koniec kontaktów -->
 					<div class="contact__method-item">
 						<p class="contact-method__caption">NIP</p>
 					</div>

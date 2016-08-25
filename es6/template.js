@@ -1,11 +1,9 @@
 // jshint esversion:6
 document.addEventListener("DOMContentLoaded", function() {
-	// Definiowanie obiektu Skills
 	const skills = [
 		{
 			name: "HTML5",
-			code: "&#xe636",
-			desc: "HTML5 is a markup language used for structuring and presenting content on the World Wide Web. It is the fifth and current version of the HTML standard."
+			code: "&#xe636"
 		},
 		{
 			name: "CSS3",
@@ -61,7 +59,6 @@ document.addEventListener("DOMContentLoaded", function() {
 		},
 		
 	];
-	// Definiowanie obiektu Kontakty
 	const contacts = [
 		{
 			name: 'info@grzegorzlaszczyk.pl',
@@ -85,13 +82,53 @@ document.addEventListener("DOMContentLoaded", function() {
 		}
 	];
 
-	// let $skillsBox = $(".skills__all-skills-container");
-	let $skillsBox = $(".skills__all-skills-container");
 
-	$skillsBox.on("click", ".single-skill__image", () => {
-		// console.log(e);
-		console.log($(this).data("desc"));
-	});
+	// Wypisanie zawartości tablicy do html
+
+	let $skills = $('<div>');
+
+	for ( let i = 0, size = skills.length; i < size; i++) {
+	
+		let $oneskill = $('<div>').html(`
+<div class="skills__single-skill-container">
+	<div class="single-skill">
+		<div class="single-skill__image-container">
+			<p class="single-skill__image">${skills[i].code}</p>
+		</div>
+		<p class="single-skill__caption">${skills[i].name}</p>
+	</div>
+</div>`);
+
+		$oneskill.appendTo($skills);
+	}
+
+	let $contacts = $('<div>');
+
+	for ( let i = 0, size = contacts.length; i < size; i++) {
+	
+		let $onecontact = $('<div>').html(`
+<div class="contact__method-item">
+	<div class="contact-method">
+		<div class="contact-method__image-container">
+			<a class="contact-method__image ${contacts[i].code}" target="_blank" ${contacts[i].link}></a>
+		</div>
+		<p class="contact-method__caption">${contacts[i].name}</p>
+	</div>
+</div>
+`);
+
+		$onecontact.appendTo($contacts);
+	}
+	
+	console.log($contacts.html());
+
+	// Skopiować z konsoli do pliku HTML
+	// albo dorobić parsowanie HTML
+
+	// let filename = "skills.txt",
+	// 	text = JSON.stringify($skills.html()),
+	// 	blob = new Blob([text], {type: "text/plain;charset=utf-8"});
+	// saveAs(blob, filename);
 
 });
 

@@ -41,10 +41,10 @@
 
 .single-skill {
 	&__image-container {
-		background-color: $colorDark;
+		// background-color: $colorLight;
 		@include desktop {
 			width: 150px;	
-			height: 150px;
+			height: 145px;
 		}
 		@include tablet {
 			width: 120px;	
@@ -56,7 +56,19 @@
 		}		
 	}
 	&__image {
-		
+		@extend %devicons;
+		@include desktop {
+			color: $colorDark;
+			font-size: $fontSize * 8;
+		}
+		@include tablet {
+			color: $colorDark;
+			font-size: $fontSize * 7;
+		}
+		@include mobile {
+			color: $colorDark;
+			font-size: $fontSize * 7;
+		}
 	}
 	&__caption {
 		margin-top: $unitX / 2;

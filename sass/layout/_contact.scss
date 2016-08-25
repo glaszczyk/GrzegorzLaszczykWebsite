@@ -47,23 +47,33 @@
 	flex-direction: column;
 	&__image-container {
 		align-self: center;
-		background-color: $colorDark;
 		border-radius: 50%;
 		@include desktop {
 			width: 150px;	
-			height: 150px;
+			height: 110px;
 		}
 		@include tablet {
 			width: 120px;	
-			height: 120px;	
+			height: 90px;	
 		}
 		@include mobile {
 			width: 120px;	
-			height: 120px;
+			height: 70px;
 		}		
 	}
 	&__image {
-		
+		@include desktop {
+			color: $colorPrimary;
+			font-size: $fontSize * 6;
+		}
+		@include tablet {
+			color: $colorPrimary;
+			font-size: $fontSize * 5;
+		}
+		@include mobile {
+			color: $colorPrimary;
+			font-size: $fontSize * 4;
+		}	
 	}
 	&__caption {
 		margin-top: $unitX / 2;
@@ -75,6 +85,15 @@
 	&__label {
 		display: block;
 		text-align: center;
+		@include desktop {
+			margin-top: $unitX;
+		}
+		@include tablet {
+			margin-top: $unitX;
+		}
+		@include mobile {
+			margin-top: $unitX;
+		}	
 	}
 	&__input {
 		width: 100%;
@@ -82,12 +101,16 @@
 		background-color: $colorLight;
 		border: 0;
 		height: $unitX * 3;
+		padding: $unitX / 2;
+		font-size: $fontSize;
 	}
 	&__textarea {
 		width: 100%;
 		display: block;
 		background-color: $colorLight;
 		border: 0;
+		padding: $unitX / 2;
+		font-size: $fontSize;
 	}
 	&__button {
 		margin: $unitX auto ($unitX * 2) auto;

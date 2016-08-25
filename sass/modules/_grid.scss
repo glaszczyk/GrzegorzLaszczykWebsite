@@ -78,7 +78,7 @@
 
 			@if $i == 1 {
 				.col3-sm-#{$i} {
-					width: 80% / 3;
+					width: (80% / 3);
 					padding-right: 2%;
 					padding-left: 2%; 
 				}
