@@ -62,18 +62,20 @@
 		}		
 	}
 	&__image {
+		color: $colorPrimary;
 		@include desktop {
-			color: $colorPrimary;
 			font-size: $fontSize * 6;
 		}
 		@include tablet {
-			color: $colorPrimary;
 			font-size: $fontSize * 5;
 		}
 		@include mobile {
-			color: $colorPrimary;
 			font-size: $fontSize * 4;
-		}	
+		}
+		&:hover {
+			transition: color 0.1s ease-out;
+			color: $colorAccent;
+		}
 	}
 	&__caption {
 		margin-top: $unitX / 2;
@@ -122,5 +124,9 @@
 		border-radius: 2px;
 		font-size: $fontSize * 1.2;
 		color: $colorLight;
+		&:hover {
+			transition: background-color 0.1s ease-out;
+			background-color: $colorAccent;
+		}
 	}
 }

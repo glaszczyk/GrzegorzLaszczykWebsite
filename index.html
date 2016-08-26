@@ -10,8 +10,8 @@
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
 	<script src="https://code.jquery.com/jquery-2.2.0.min.js"> </script>
 	<!-- <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/14082/FileSaver.js"> </script> -->
-	<!-- <script type="text/javascript" src="./js/script_es6.js"></script> -->
-	<script type="text/javascript" src="./es6/script_es6.js"></script>	
+	<script type="text/javascript" src="./js/script_es6.js"></script>
+	<!-- <script type="text/javascript" src="./es6/script_es6.js"></script>	 -->
 	<!-- <script type="text/javascript" src="./es6/template.js"></script> -->
 </head>
 <body class="global">
@@ -36,10 +36,10 @@
 
 				<nav class="main-menu__navigation">
 					<ul class="navigation">
-						<li class="navigation__item">About me</li>
-						<li class="navigation__item">Portfolio</li>
-						<li class="navigation__item">Skills</li>
-						<li class="navigation__item">Contact</li>
+						<li class="navigation__item"><a href="#about" class="navigation__link">About me</a></li>
+						<li class="navigation__item"><a href="#portfolio" class="navigation__link">Portfolio</a></li>
+						<li class="navigation__item"><a href="#skills" class="navigation__link">Skills</a></li>
+						<li class="navigation__item"><a href="#contact" class="navigation__link">Contact</a></li>
 					</ul>
 				</nav>
 			</header>
@@ -51,7 +51,7 @@
 	<!-- SEKCJA ABOUT ME -->
 	<!-- __about-me odpowiada za wygląd headera dla całej szerokości okna przeglądarki, bez względu na to, ile miejsca zajmie sama strona -->
 	<!-- __about-me-container to wrapper dla zdefiniowanej szerokości strony (desktop/tablet/mobile) -->
-	<div class="global__about-me">
+	<div id="about" class="global__about-me">
 		<div class="global__about-me-container">
 
 			<!-- blok about-me ma 100% szerokości i dopasowuje się zawsze to zadanej szerokości -->		
@@ -87,11 +87,14 @@
 	<!-- SEKCJA PORTFOLIO -->
 	<!-- __portfolio odpowiada za wygląd headera dla całej szerokości okna przeglądarki, bez względu na to, ile miejsca zajmie sama strona -->
 	<!-- __portfolio-container to wrapper dla zdefiniowanej szerokości strony (desktop/tablet/mobile) -->
-	<div class="global__portfolio">
+	<div id="portfolio" class="global__portfolio">
 		<div class="global__portfolio-container">
 
 			<!-- blok portfolio ma 100% szerokości i dopasowuje się zawsze to zadanej szerokości -->
 			<section class="portfolio">
+				<div class="portfolio__modal portfolio__modal--hidden">
+					<h1></h1>
+				</div>
 				<div class="portfolio__title-container col4-lg-4 col4-md-4 col4-sm-4">
 					<h2 class="portfolio__title">Portfolio</h2>
 					<h3 class="portfolio__subtitle">Some of my works</h3>
@@ -122,13 +125,13 @@
 					<div class="portfolio__single-project col4-lg-1 col4-md-2-1 col4-sm-4">
 						<div class="single-project">
 							<img src="./images/tools_hd.jpg" alt="" class="single-project__image">
-							<p class="single-project__caption">Project 1</p>
+							<p class="single-project__caption">Project 3</p>
 						</div>
 					</div>
 					<div class="portfolio__single-project col4-lg-1 col4-md-2-1 col4-sm-4">
 						<div class="single-project">
 							<img src="./images/tools_hd.jpg" alt="" class="single-project__image">
-							<p class="single-project__caption">Project 2</p>
+							<p class="single-project__caption">Project 4</p>
 						</div>
 					</div>
 				</div>
@@ -140,13 +143,13 @@
 					<div class="portfolio__single-project col4-lg-1 col4-md-2-1 col4-sm-4">
 						<div class="single-project">
 							<img src="./images/tools_hd.jpg" alt="" class="single-project__image">
-							<p class="single-project__caption">Project 1</p>
+							<p class="single-project__caption">Project 5</p>
 						</div>
 					</div>
 					<div class="portfolio__single-project col4-lg-1 col4-md-2-1 col4-sm-4">
 						<div class="single-project">
 							<img src="./images/tools_hd.jpg" alt="" class="single-project__image">
-							<p class="single-project__caption">Project 2</p>
+							<p class="single-project__caption">Project 6</p>
 						</div>
 					</div>
 				</div>
@@ -158,7 +161,7 @@
 	<!-- SEKCJA SKILLS -->
 	<!-- __skills odpowiada za wygląd headera dla całej szerokości okna przeglądarki, bez względu na to, ile miejsca zajmie sama strona -->
 	<!-- __skills-container to wrapper dla zdefiniowanej szerokości strony (desktop/tablet/mobile) -->
-	<div class="global__skills">
+	<div id="skills" class="global__skills">
 		<div class="global__skills-container">
 
 			<!-- blok skills ma 100% szerokości i dopasowuje się zawsze to zadanej szerokości -->			
@@ -173,7 +176,8 @@
 					<div class="skills__single-skill-container">
 						<div class="single-skill">
 							<div class="single-skill__image-container">
-								<p class="single-skill__image" data-desc="Opis HTML">&#xe636</p>
+								<p class="single-skill__image">&#xe636</p>
+								<p class="single-skill__description">HTML5 is a markup language used for structuring and presenting content on the World Wide Web. It is the fifth and current version of the HTML standard.</p>
 							</div>
 							<p class="single-skill__caption">HTML5</p>
 						</div>
@@ -181,7 +185,8 @@
 					<div class="skills__single-skill-container">
 						<div class="single-skill">
 							<div class="single-skill__image-container">
-								<p class="single-skill__image" data-desc="Opis CSS3">&#xe649</p>
+								<p class="single-skill__image">&#xe649</p>
+								<p class="single-skill__description single-skill__description--hidden">CSS3 is a markup language used for structuring and presenting content on the World Wide Web. It is the fifth and current version of the HTML standard.</p>
 							</div>
 							<p class="single-skill__caption">CSS3</p>
 						</div>
@@ -189,7 +194,8 @@
 					<div class="skills__single-skill-container">
 						<div class="single-skill">
 							<div class="single-skill__image-container">
-								<p class="single-skill__image" data-desc="Opis JavaScript">&#xe681</p>
+								<p class="single-skill__image">&#xe681</p>
+								<p class="single-skill__description single-skill__description--hidden">JavaScript is a markup language used for structuring and presenting content on the World Wide Web. It is the fifth and current version of the HTML standard.</p>
 							</div>
 							<p class="single-skill__caption">JavaScript</p>
 						</div>
@@ -223,7 +229,7 @@
 							<div class="single-skill__image-container">
 								<p class="single-skill__image">&#xe609</p>
 							</div>
-							<p class="single-skill__caption">Git</p>
+							<p class="single-skill__caption">GitHub</p>
 						</div>
 					</div>
 					<div class="skills__single-skill-container">
@@ -277,7 +283,7 @@
 	<!-- SEKCJA KONTAKT -->
 	<!-- __contact odpowiada za wygląd headera dla całej szerokości okna przeglądarki, bez względu na to, ile miejsca zajmie sama strona -->
 	<!-- __contact-container to wrapper dla zdefiniowanej szerokości strony (desktop/tablet/mobile) -->
-	<div class="global__contact">
+	<div id="contact" class="global__contact">
 		<div class="global__contact-container">
 
 			<!-- blok contact ma 100% szerokości i dopasowuje się zawsze to zadanej szerokości -->

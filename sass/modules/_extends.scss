@@ -28,9 +28,8 @@
 
 %title {
 	@include font( ($fontSize * 2), $colorPrimary);
-	// margin: ($unitX *2) 0 ($unitX / 3) 0;
+	margin: ($unitX *4) 0 ($unitX / 3) 0;
 	text-align: center;	
-
 	@include mobile {
 		@include font( ($fontSize * 1.8), $colorPrimary);
 	}

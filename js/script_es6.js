@@ -2,10 +2,12 @@ $(document).ready( function () {
 	console.log("Działa");
 
 	// tworzymy referencje do DOM
-	var $skillBox = $('.skills__all-skills-container');
+	var $portfolio = $('.portfolio'),
+		$modal = $('.portfolio__modal');
 
-	$skillBox.on('click', '.single-skill__image', function () {
-		console.log($(this).data('desc'));
+	$portfolio.on('click', '.single-project', function () {
+		$this = $(this);
+		$modal.toggleClass('portfolio__modal--hidden');
+		$modal.child().html($this.find('.single-project__caption').text());
 	});
-
 });

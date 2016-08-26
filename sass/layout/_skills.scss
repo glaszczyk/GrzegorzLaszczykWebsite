@@ -40,11 +40,12 @@
 }
 
 .single-skill {
+	position: relative;
 	&__image-container {
 		// background-color: $colorLight;
 		@include desktop {
 			width: 150px;	
-			height: 145px;
+			min-height: 145px;
 		}
 		@include tablet {
 			width: 120px;	
@@ -70,8 +71,39 @@
 			font-size: $fontSize * 7;
 		}
 	}
+	.single-skill__description {
+		display: none;
+	}
+
 	&__caption {
 		margin-top: $unitX / 2;
 	}
 
+	&:hover {
+		z-index: 10;
+		.single-skill__description {
+			display: block;
+			position: absolute;
+			z-index: 50;
+			font-size: $fontSize * .7;
+			top:0;
+			text-align: center;
+			padding: 130px ($unitX / 2) ($unitX / 2) ($unitX / 2);
+			box-shadow: 0 0 5px 0 $colorDark;
+			border-radius: 5px;
+			background-color: $colorAccent;
+			color: $colorDark;
+			@include desktop {
+				padding-top: 150px;
+			}
+		}
+		.single-skill__caption {
+			display: none;
+		}
+		.single-skill__image {
+			z-index: 100;
+			position: relative;
+			color: $colorLight;;
+		}
+	}
 }

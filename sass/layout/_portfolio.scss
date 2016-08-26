@@ -1,4 +1,18 @@
 .portfolio {
+	&__modal {
+		position: fixed;
+		top:0;
+		left:0;
+		display: block;
+		margin: 0;
+		background-color: $colorDark;
+		opacity: .7;
+		width: 100vw;
+		height: 100vh;
+		&--hidden {
+			display: none;
+		}
+	}
 	&__title-container {
 		margin: ($unitX * 2) 0;
 	}
