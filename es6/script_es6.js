@@ -86,12 +86,10 @@ document.addEventListener("DOMContentLoaded", function() {
 	];
 
 	// let $skillsBox = $(".skills__all-skills-container");
-	let $skillsBox = $(".skills__all-skills-container");
-
-	$skillsBox.on("click", ".single-skill__image", () => {
-		// console.log(e);
-		console.log($(this).data("desc"));
-	});
+	let $skillsBox = document.querySelector(".skills__all-skills-container"),
+		$image = $skillsBox.addEventListener('click', (event) => {
+			console.log(event.target.dataset.desc);
+		});
 
 });
 
