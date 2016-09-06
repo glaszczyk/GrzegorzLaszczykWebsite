@@ -34,6 +34,16 @@
 		display: flex;
 		justify-content: center;
 	}
+	&__subtitle--accent {
+		@extend %subtitle;
+		background-color: $colorLight;
+		color: $colorPrimary;
+		padding: 5px 10px;
+		> a {
+			text-decoration: none;
+			color: $colorPrimary;
+		}
+	}
 	&__subtitle--withline {
 		@extend %withline;
 	}
